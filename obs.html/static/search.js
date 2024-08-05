@@ -88,7 +88,7 @@ async function LoadSearchData(){
     // no cached data available, get data and cache it when possible
     console.log('Loading search data from file...')
 
-    GetGzipContentsAsB64Str(CONFIGURED_HTML_URL_PREFIX + '/obs.html/data/search.json.gzip').then(gzipped_data_str => {
+    GetGzipContentsAsB64Str(CONFIGURED_HTML_URL_PREFIX + '/design-document/obs.html/data/search.json.gzip').then(gzipped_data_str => {
 
         ls_set('search_hash', gzip_hash);
 
@@ -153,10 +153,10 @@ function InitFlexSearch(){
 // -----------------------------------------------------------------------------------------------
 function get_node_url_adaptive(node){
     if (URL_MODE == 'relative'){
-        return CONFIGURED_HTML_URL_PREFIX + '/' + node.rtr_url;
+        return CONFIGURED_HTML_URL_PREFIX + '/design-document/' + node.rtr_url;
     }
     if (URL_MODE == 'absolute'){
-        return node.url;
+        return '/design-document/' + node.url;
     }
     throw 'OBS.HTML: URL_MODE should be either "absolute" or "relative"! Search failed to get node url.';
 }

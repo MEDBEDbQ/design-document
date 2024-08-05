@@ -527,13 +527,13 @@ function get_graph_data(){
     if (RELATIVE_PATHS){
         let page_depth = window.location.pathname.split('/').length - CONFIGURED_HTML_URL_PREFIX.split('/').length - 1;
         if (page_depth > 0){
-            return '../'.repeat(page_depth) + '/obs.html/data/graph.json';
+            return '../'.repeat(page_depth) + '/design-document/obs.html/data/graph.json';
         }
         else {
-            return './' + '/obs.html/data/graph.json';
+            return './' + '/design-document/obs.html/data/graph.json';
         }
     }
-    return get_html_url_prefix()+'/obs.html/data/graph.json';
+    return get_html_url_prefix()+'/design-document/obs.html/data/graph.json';
 }
 function get_html_url_prefix(){
     return ''  // this value is replaced by the actual url prefix when compiled

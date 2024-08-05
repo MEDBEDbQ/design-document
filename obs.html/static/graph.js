@@ -16,9 +16,9 @@ var graphers_hash = {
 }
 // // DYNAMIC
 // ///////////////////////////////////////////////////////////////////////////////
-// import * as grapher_custom from '/obs.html/static/graphers/custom.js';
-// import * as grapher_3d from '/obs.html/static/graphers/3d.js';
-// import * as grapher_2d from '/obs.html/static/graphers/2d.js';
+// import * as grapher_custom from '/design-document/obs.html/static/graphers/custom.js';
+// import * as grapher_3d from '/design-document/obs.html/static/graphers/3d.js';
+// import * as grapher_2d from '/design-document/obs.html/static/graphers/2d.js';
 
 // var graphers = [
 // 	{'id': 'custom', 'name': 'custom', 'module': grapher_custom},
@@ -332,16 +332,16 @@ function get_node_url_adaptive(node){
         let url = node.rtr_url;
         let page_depth = window.location.pathname.split('/').length - CONFIGURED_HTML_URL_PREFIX.split('/').length - 1;
         if (page_depth > 0){
-            return '../'.repeat(page_depth) + url;
+            return '/design-document/'.repeat(page_depth) + url;
         }
         else {
-            return './' + url;
+            return '/design-document/' + url;
         }
     }
 
     // build url: absolute path
     if (URL_MODE == 'absolute'){
-        return node.url;
+        return "/design-document/" + node.url;
     }
 
     // fallthrough
