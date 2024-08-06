@@ -5,7 +5,7 @@
         <head>
                 <!-- Page information -->
                 <meta charset="UTF-8" />
-                <meta name="node_id" content="ловушки">
+                <meta name="node_id" content="магическая чума">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="shortcut icon" href="/design-document/favicon.ico" />
 
@@ -57,9 +57,9 @@
 
                 <!-- Onload tweaks -->
                 <script>
-                        const CURRENT_NODE = 'ловушки';
+                        const CURRENT_NODE = 'магическая чума';
                         const HTML_URL_PREFIX = '';
-                        const PAGE_DEPTH = 2;
+                        const PAGE_DEPTH = 3;
                 </script>
         </head>
 
@@ -181,7 +181,7 @@
             }
         </script>
                                     <div class="graph_header_div requires_js">
-            <a id="graph_link" class="system-link" href="/design-document/obs.html/graph/index.html?node=ловушки" title="Open fullpage Graph">
+            <a id="graph_link" class="system-link" href="/design-document/obs.html/graph/index.html?node=магическая чума" title="Open fullpage Graph">
                     <img class="graph_header_div_svg" src = "/design-document/obs.html/static/graph.svg" alt="Open fullpage Graph" style="margin: 2px; width: 17px;"/>
             </a>
         </div>
@@ -222,10 +222,10 @@
 		<li><div class="file-icon"></div><a class="" href="/design-document/01 Жанр/Жанр.html"  >Жанр</a></li>
 	</ul>
 </div>
-<button id="folder-2" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>02 Синопсис</button>
-<div id="folder-container-2" class="dir-container requires_js " path="/design-document/02 Синопсис">
-	<button id="folder-3" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>Лор</button>
-	<div id="folder-container-3" class="dir-container requires_js " path="/design-document/02 Синопсис/Лор">
+<button id="folder-2" class="dir-button active" onclick="toggle_dir(this.id)"><div class="file-icon"></div>02 Синопсис</button>
+<div id="folder-container-2" class="dir-container requires_js active" path="/design-document/02 Синопсис">
+	<button id="folder-3" class="dir-button active" onclick="toggle_dir(this.id)"><div class="file-icon"></div>Лор</button>
+	<div id="folder-container-3" class="dir-container requires_js active" path="/design-document/02 Синопсис/Лор">
 		<button id="folder-4" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>Боги</button>
 		<div id="folder-container-4" class="dir-container requires_js " path="/design-document/02 Синопсис/Лор/Боги">
 			<ul class="dir-list">
@@ -233,10 +233,10 @@
 				<li><div class="file-icon"></div><a class="" href="/design-document/02 Синопсис/Лор/Боги/Боги.html"  >Боги</a></li>
 			</ul>
 		</div>
-		<button id="folder-5" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>События</button>
-		<div id="folder-container-5" class="dir-container requires_js " path="/design-document/02 Синопсис/Лор/События">
+		<button id="folder-5" class="dir-button active" onclick="toggle_dir(this.id)"><div class="file-icon"></div>События</button>
+		<div id="folder-container-5" class="dir-container requires_js active" path="/design-document/02 Синопсис/Лор/События">
 			<ul class="dir-list">
-				<li><div class="file-icon"></div><a class="" href="/design-document/02 Синопсис/Лор/События/Магическая Чума.html"  >Магическая Чума</a></li>
+				<li><div class="file-icon"></div><a class="active current_page_dirtree" href="/design-document/02 Синопсис/Лор/События/Магическая Чума.html"  >Магическая Чума</a></li>
 			</ul>
 		</div>
 		<ul class="dir-list">
@@ -259,13 +259,13 @@
 		<li><div class="file-icon"></div><a class="" href="/design-document/03 Стиль игры/Стиль игры.html"  >Стиль игры</a></li>
 	</ul>
 </div>
-<button id="folder-8" class="dir-button active" onclick="toggle_dir(this.id)"><div class="file-icon"></div>04 Системы</button>
-<div id="folder-container-8" class="dir-container requires_js active" path="/design-document/04 Системы">
-	<button id="folder-9" class="dir-button active" onclick="toggle_dir(this.id)"><div class="file-icon"></div>Препятствия</button>
-	<div id="folder-container-9" class="dir-container requires_js active" path="/design-document/04 Системы/Препятствия">
+<button id="folder-8" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>04 Системы</button>
+<div id="folder-container-8" class="dir-container requires_js " path="/design-document/04 Системы">
+	<button id="folder-9" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>Препятствия</button>
+	<div id="folder-container-9" class="dir-container requires_js " path="/design-document/04 Системы/Препятствия">
 		<ul class="dir-list">
 			<li><div class="file-icon"></div><a class="" href="/design-document/04 Системы/Препятствия/Двери.html"  >Двери</a></li>
-			<li><div class="file-icon"></div><a class="active current_page_dirtree" href="/design-document/04 Системы/Препятствия/Ловушки.html"  >Ловушки</a></li>
+			<li><div class="file-icon"></div><a class="" href="/design-document/04 Системы/Препятствия/Ловушки.html"  >Ловушки</a></li>
 			<li><div class="file-icon"></div><a class="" href="/design-document/04 Системы/Препятствия/Препятствия.html"  >Препятствия</a></li>
 		</ul>
 	</div>
@@ -364,16 +364,28 @@
     </div>
 </div>
                         <div class="container">
-                                <div class="content"><h1 id="h__1">Ловушки</h1>
-<p>Ловушки работают как на <a href="/design-document/08%20%D0%9F%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6%D0%B8/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9%20%D0%B3%D0%B5%D1%80%D0%BE%D0%B9.html">ГГ</a> так и на <a href="/design-document/07%20%D0%92%D1%80%D0%B0%D0%B3%D0%B8/%D0%92%D1%80%D0%B0%D0%B3%D0%B8.html">врагов</a>. <br />
-Пилы <br />
-Шипы</p></div>
+                                <div class="content"><h1 id="h__1">Магическая Чума</h1>
+<p>В древние времена Занхару поразила страшная Магическая Чума.  <br />
+Считается, что это могло произойти в результате экспериментов великого лича над могущественной магией некромантии, в теории способной оживлять и подчинять богов. <br />
+Эта болезнь, зародившаяся из тьмы, обратила дар магии против самой жизни. Магия начала гнить.   </p>
+<p>Могучие маги пали первыми, их тела сгнивали изнутри за считанные дни. Те, чья связь с магией была слабее, страдали дольше. <br />
+Многие магические артефакты стали источниками заразы, распространяя болезнь даже среди тех, кто был совсем не сведущим в магическом искусстве.   </p>
+<p>Чума распространилось по всему миру с ужасающей скоростью. Даже те немногие маги, кто успел подготовиться к столкновению с болезнью, смогли лишь защитить свои тела, от физического воздействия чумы. Но болезнь лишала их рассудка.   </p>
+<p>Когда половина населения Занхары пала жертвой магической чумы, а надежда почти угасла, явился Азгиф. Он принес с собой знание, обретенное через страдания множества миров. Ибо Азгиф, уже не раз был свидетелем подобных бедствий.    </p>
+<p>Долгие эпохи он наблюдал, как цивилизации гибнут от магической чумы, неустанно ища способ остановить это зло. <br />
+И вот, прислушиваясь к мудрости древних богов из других миров и знания высокоразвитых цивилизаций, Азгиф смог найти средство, способное извлечь магию вместе со скверной из всего, чего коснется. Это были особые растения аномально впитывающие в себя любую магию, без возможности её вернуть.   </p>
+<p>К счастью на Занхаре был подходящий климат для таких растений. Азгиф раскрыл тайну этого растений немногим выжившим и поделился достаточным количеством его экземпляров принесённых из далёких вселенных. Позже с помощью свойств этих растений всё же удалось очистить Занхару от ужасной болезни, но вместе с тем и почти всеми проявлениями магии. Это было болезненное очищение - многие существа, чья жизнь была неразрывно связана с магией, погибли.    </p>
+<p>Лишь в месте зарождения болезни, концентрация магической чумы была столь велика, что она велась не просто в землю вокруг, а в само пространство. Эту область кое как изолировали. И по сей день она остается опасным напоминанием о пережитом бедствии.   </p>
+<p>После очищения от чумы жители Занхары стали почитать Азгифа как Спасителя. Его религия стала одной из главенствующих на Занхаре.   </p>
+<p>Из страха перед возвращением магической чумы и понимания опасности необузданной магии, любое её использование было строго запрещено на многие столетия.   </p>
+<p>Лишь недавно, когда начали открываться порталы, и откуда стали приходить существа полностью пропитанные магией, людям стало необходимо заново постигать её тайны. <br />
+А путешествия в большинство из порталов без особой магической подготовки и нужных артефактов вообще сродни самоубийству. Поэтому спец отряды которые отправляются в эти порталы простые люди скорее боятся, чем уважают. (Отсылка на ведьмака)</p></div>
 <div class="note-footer">
 <div class="backlinks">
 <h2>Backlinks</h2>
 <ul>
-	<li><a class="backlink" href="/design-document/05 Механики/Метание.html">метание</a></li>
-	<li><a class="backlink" href="/design-document/04 Системы/Препятствия/Препятствия.html">препятствия</a></li>
+	<li><a class="backlink" href="/design-document/02 Синопсис/Лор/Боги/Азгиф.html">азгиф</a></li>
+	<li><a class="backlink" href="/design-document/02 Синопсис/Лор/Лор.html">лор</a></li>
 </ul>
 </div>
 
@@ -383,17 +395,17 @@
 
 </div>
 <div class="graph requires_js ">
-    <div id="A288110717831661537722564445144837304842{level}" class="graph_div"></div>
+    <div id="A86565461809498728230241709417848639067{level}" class="graph_div"></div>
 
-    <div class="graph-instructions" id="D288110717831661537722564445144837304842{level}">
+    <div class="graph-instructions" id="D86565461809498728230241709417848639067{level}">
         Left-click: follow link, Right-click: select node, Scroll: zoom
     </div>
     
     <div class="graph-button-row" style="display:flex;">
-        <button class="graph_button graph_show_button" id="B288110717831661537722564445144837304842{level}" level="{level}" note_temp_id="288110717831661537722564445144837304842" onclick="window.ObsHtmlGraph.run(this, '288110717831661537722564445144837304842', 'ловушки');">
+        <button class="graph_button graph_show_button" id="B86565461809498728230241709417848639067{level}" level="{level}" note_temp_id="86565461809498728230241709417848639067" onclick="window.ObsHtmlGraph.run(this, '86565461809498728230241709417848639067', 'магическая чума');">
             Show Graph
         </button>
-        <button class="graph_button graph_type_button" id="C288110717831661537722564445144837304842{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
+        <button class="graph_button graph_type_button" id="C86565461809498728230241709417848639067{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
             2D
         </button>
     </div>
